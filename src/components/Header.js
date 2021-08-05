@@ -16,7 +16,7 @@ const Header = () => {
       { isAuth && (<nav>
         <ul>
           <li>
-            <Link to='/'>DashBoard</Link>
+            <Link to={process.env.PUBLIC_URL +'/'}>DashBoard</Link>
           </li>
           <li>
             <Link to='/new-user'>Add New User</Link>
