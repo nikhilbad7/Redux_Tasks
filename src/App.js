@@ -14,12 +14,12 @@ function App() {
       <Header />
       <Switch>
       	{!isAuth && (
-          <Route path='/' exact>
+          <Route path={process.env.PUBLIC_URL +'/'} exact>
             <Auth />
           </Route>
         )}
         {isAuth && (
-        	<Route path='/' exact>
+        	<Route path={process.env.PUBLIC_URL +'/'} exact>
       			<Dashboard />
       		</Route>
         )}
@@ -47,7 +47,6 @@ function App() {
       			<Auth />
       		</Route>
         )}
-        
       </Switch> 
     </Router>
     

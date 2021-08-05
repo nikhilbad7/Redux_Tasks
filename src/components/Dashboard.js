@@ -8,33 +8,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Dashboard = () => {
 
-	const userData = useSelector(state => state.users );
-	const renderUsers = userData.map(user => (
-			<tr key={user.id}>
-		 		<td>{user.name}</td>
-		 		<td>{user.age}</td>
-		 		<td>{user.gender}</td>
-		 		<td>{user.email}</td>
-		 		<td>{user.phoneNo}</td>
-		 	</tr>
+  const userData = useSelector(state => state.users );
+  const renderUsers = userData.map(user => (
+      <tr key={user.id}>
+        <td>{user.name}</td>
+        <td>{user.age}</td>
+        <td>{user.gender}</td>
+        <td>{user.email}</td>
+        <td>{user.phoneNo}</td>
+      </tr>
 
-		));   
+    ));   
 
     
   return (
     
       <ReactBootStrap.Table striped bordered hover>
       <thead>
-      	<tr>
-      		<th>Name</th>
-      		<th>Age</th>
-      		<th>Gender</th>
-      		<th>Email</th>
-      		<th>PhoneNo</th>
-      	</tr>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>PhoneNo</th>
+        </tr>
       </thead>
       <tbody>
-      	{ renderUsers }
+        { renderUsers }
       </tbody>
       </ReactBootStrap.Table>
      

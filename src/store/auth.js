@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 const initialAuthState = {
 	username:"hruday@gmail.com",
- 	password:'hruday123',
+ 	password:"hruday123",
 
 	isAuthenticated: false
 };
