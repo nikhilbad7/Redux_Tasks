@@ -32,7 +32,7 @@ export const AddUserForm = () => {
                  email,
                  phoneNo
             }));
-          history.push('/');
+          history.push(process.env.PUBLIC_URL +'/');
           
       }
   }
